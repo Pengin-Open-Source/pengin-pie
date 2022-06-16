@@ -37,7 +37,7 @@ class LoginForm(FlaskForm):
     password = PasswordField('Password', 
                         validators=[DataRequired(), 
                         Length(min=5,max = 20)])#password must be between 5 and 15 characters (data required validators)
-
+                        
     #keeps the user logged in for a while using a secure cookie. 
     remember = BooleanField('Remember Me')
     submit = SubmitField('Login')
