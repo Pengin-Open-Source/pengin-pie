@@ -1,0 +1,21 @@
+Metadata-Version: 1.1
+Name: Flask-LoginManager
+Version: 1.1.6
+Summary: Flask-Loginmanager supports multiple roles and permissions for Flask, inspired by Flask-Login
+Home-page: https://github.com/AristotleJunior/flask-loginmanager
+Author: rain
+Author-email: rain@joymud.com
+License: MIT
+Description: UNKNOWN
+Keywords: flask,login,multiple roles,permissions
+Platform: any
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Flask
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
