@@ -25,6 +25,12 @@ posts = [
             'title': 'Kid 2',
             'content': 'So excited!', 
             'date_posted': 'February 13th, 2022'
+        },
+        {
+            'author': 'Lokesh Narasani', 
+            'title': 'Intern',
+            'content': 'Here to learn!', 
+            'date_posted': 'June 25th, 2022'
         }
 
 
