@@ -1,8 +1,8 @@
 FROM python:3.9-alpine
 
-COPY ./requirements.txt /pengin-pie/requirements.txt
+COPY ./requirements.txt /app/requirements.txt
 
-WORKDIR /pengin-pie
+WORKDIR /app
 
 RUN pip install -r requirements.txt
 
