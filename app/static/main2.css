@@ -27,7 +27,7 @@
 
 /* General content */
 body {
-    font-family: 'Actor', sans-serif;
+    font-family: 'Roboto', sans-serif;
     background: linear-gradient(var(--darkgray), var(--lightgray));
     margin-top: 5rem;
 }
