@@ -1,0 +1,137 @@
+
+/* Variable definitions */
+:root {
+
+    /* Color variables */
+
+    --white: #FFFFFF;
+  
+    --lightgray: #E4E8EE;
+    --gray: #898E91;
+    --darkgray: #474747;
+  
+    --lightblue: #00A8E8;
+    --blue: #007EA7;
+    --darkblue: #003459;
+    --darkestblue: #00171F;
+
+
+    /* Border variables */
+
+    --bordersize: 1px;
+
+    /* How round a rounded corner is: */
+    --roundcorner: 5px;
+  
+}
+
+/* General content */
+body {
+    font-family: 'Actor', sans-serif;
+    background: linear-gradient(var(--darkgray), var(--lightgray));
+    margin-top: 5rem;
+}
+
+
+h1 {
+    color: var(--white);
+}
+
+
+h2, h3, h4, h5, h6 {
+    color: var(--darkgray);
+}
+
+
+/* Site header */
+.site-header .navbar-nav .nav-link {
+    color: #cbd5db;
+}
+
+.site-header .navbar-nav .nav-link:hover {
+    color: #ffffff;
+    transition-duration: 0.4s;
+}
+
+.site-header .navbar-nav .nav-link.active {
+    font-weight: 500;
+}
+
+
+/* Divisions */
+
+.three-div-content .leftcontent {
+/* can add structure styling here */
+}
+
+.three-div-content .middlecontent {
+/* can add structure styling here */
+}
+
+.three-div-content .rightcontent {
+/* can add structure styling here */
+}
+
+.two-div-content .leftcontent {
+/* can add structure styling here */
+}
+
+.two-div-content .rightcontent {
+/* can add structure styling here */
+}
+
+
+/* Buttons */
+
+.button {
+    background-color: var(--white);
+    color: var(--gray);
+    width: 150px;
+    padding: 10px;
+
+    border-radius: var(--roundcorner);
+    transition-duration: 0.2s;
+}
+
+.button:hover {
+    background-color: var(--gray);
+    color: var(--white);
+}
+
+.important-button {
+    background-color: var(--blue);
+    color: var(--white);
+}
+
+.important-button:hover {
+    background-color: var(--darkblue);
+}
+
+.disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.buttons {
+    display: inline;
+}
+
+
+/* Side card */
+.side-card {
+    background: var(--white);
+    padding: 20px 20px;
+    border: 1px dashed var(--lightgray);
+    border-radius: var(--roundcorner);
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+
+
+/* Tables */
+
+/* overall table */
+.table {
+    border-radius: var(--roundcorner);
+}
+
