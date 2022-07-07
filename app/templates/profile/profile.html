@@ -3,8 +3,8 @@
 {% block profilecontent %}
 
   <form method="GET">
-    <h2>Profile Information: Welcome, {{name}}!</h2>
-      <table class="table table-bordered">
+    <h2>Profile Information: Welcome, {{ name }}!</h2>
+      <table class="table">
         <tr>
           <th width="30%">Name</th>
           <td width="2%">:</td>
@@ -17,9 +17,9 @@
         </tr>
       </table>
       <div class="buttons">
-        <button class="button is-block is-info is-medium" formaction="/edit_profile">Edit Profile</button>
+        <button class="button" formaction="/edit_profile">Edit Profile</button>
         <!-- for testing purposes: -->
-        <button class="button is-block is-info is-medium" formaction="/edit_password">Edit Password</button> 
+        <button class="button" formaction="/edit_password">Edit Password</button> 
       </div>
   </form>
 
