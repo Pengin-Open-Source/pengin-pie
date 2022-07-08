@@ -80,8 +80,29 @@ h2, h3, h4, h5, h6 {
 /* can add structure styling here */
 }
 
-/* Actually, reference https://github.com/Pengin-Open-Source/pengin-pie/blob/41-main-div-css-divisions-layout/app/static/main.css */
+/* Actually, reference Andy's code https://github.com/Pengin-Open-Source/pengin-pie/blob/41-main-div-css-divisions-layout/app/static/main.css */
+.oneDiv {
+    display: flex;
+    flex-direction: column;
+}
 
+.oneThirdDiv {
+    display: flex;
+    flex-direction: column;
+    flex: 33%;
+}
+
+.twoThirdDiv {
+    display: flex;
+    flex-direction: column;
+    flex: 66%;
+}
+
+@media (max-width: 1000px) {
+    .oneThirdDiv, .twoThirdDiv{
+      flex: 100%
+    }
+}
 
 
 /* Article  */
