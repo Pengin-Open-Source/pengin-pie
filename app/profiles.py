@@ -32,7 +32,7 @@ def edit_profile_post():
     db.session.commit()
     
     # reload profile page
-    return redirect(url_for('main.profile'))
+    return redirect(url_for('profiles.profile'))
 
 @profiles.route('/edit_password')
 def edit_password():
@@ -40,7 +40,7 @@ def edit_password():
 
 @profiles.route('/edit_password', methods=['POST'])
 def edit_password_post():
-    return redirect(url_for('main.profile'))
+    return redirect(url_for('profiles.profile'))
     
 
 
