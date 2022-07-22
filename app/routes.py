@@ -1,8 +1,10 @@
 #import flask module
+from cgi import print_arguments
+from os import stat
 from flask import Blueprint, render_template, redirect, flash, url_for, request
 from flask_login import login_required, current_user
 from . import db
-from .models import User
+from .models import Company, User, Members_Company
 
 main = Blueprint('main', __name__)
 
@@ -105,9 +107,11 @@ def edit_company_info_post():
 
     # Get new information
 
+    
+
     name = request.form.get('name')
     address1 = request.form.get('address1')
-    address1 = request.form.get('address2')
+    #address2 = request.form.get('address2')
     city = request.form.get('city')
     state = request.form.get('state')
     zipcode = request.form.get('zipcode')
@@ -115,6 +119,39 @@ def edit_company_info_post():
     phone = request.form.get('phone')
     email = request.form.get('email')
     members = request.form.get('members')
+
+
+    company = Company.query.filter_by(name=name).first()
+
+    if company:
+            flash(' Company already exists')
+            
+    
+    new_company = Company(name=name, address1 = address1,  city = city, state = state,
+    zipcode = zipcode, country = country, phone = phone, email = email)
+    
+
+    new_id = new_company.id
+    new_members_company = Members_Company(id = new_id, user_id = current_user.id)
+
+    db.session.add(new_members_company)
+    db.session.add(new_company)
+    db.session.commit()
+
+
+    #user.company.address1 = address1
+    #current_user.company.address1 = address1
+    #user.address2 = address2
+    #current_user.company.city = city
+    #current_user.company.state = state
+    #user.zipcode = zipcode
+    #user.country = country
+    #user.phone = phone 
+    #user.email = email
+    #user.members = members
+
+
+
 
     # TODO reflect changes
 
