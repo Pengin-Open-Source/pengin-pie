@@ -54,7 +54,7 @@ class Company(db.Model):
     zipcode = db.Column(db.Integer())
     email = db.Column(db.String(100), unique=True)
     address1 = db.Column(db.String() )
-    address1 = db.Column(db.String() )
+    address2 = db.Column(db.String() )
 
 
 class UserMembership(db.Model):
