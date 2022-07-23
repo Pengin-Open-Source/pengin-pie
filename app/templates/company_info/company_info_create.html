@@ -3,9 +3,9 @@
 {% block companycontent %}
 
 <!-- The company info for the user to enter -->
-<form id="edit_company_info_form" class="hidden" method="POST" action="company_info/create_company">
+<form id="create_company_info_form" class="hidden" method="POST" action="/companies/create_company">
 
-    <h1 class="header">Edit Company Information</h1>
+    <h1 class="header">Create Company</h1>
 
     <div class="form-group">
         <label>Company Name*</label>
@@ -29,7 +29,7 @@
 
     <div class="form-group">
         <label>State*</label>
-        <input class="form-control" type="text" name="state" value="{{ company.state }}" placeholder="State">
+        <input class="form-control" type="text" name="state" placeholder="State">
       </div>
 
     <div class="form-group">
