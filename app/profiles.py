@@ -8,16 +8,16 @@ from flask_principal import Permission, RoleNeed
 
 ## user profile routes
 
-profiles = Blueprint('profiles', __name__)
+profiles = Blueprint('profiles', __name__, url_prefix="/profile")
 
-@profiles.route('/profile')
+@profiles.route('/')
 @login_required
 def profile():
     return render_template('profile/profile.html', name=current_user.name, email=current_user.email)
 
 
 #edit profile info post
-@profiles.route('/profile/edit_profile', methods=['POST'])
+@profiles.route('/edit_profile', methods=['POST'])
 @login_required
 def edit_profile_post():
     old_email = request.form.get('old_email')
